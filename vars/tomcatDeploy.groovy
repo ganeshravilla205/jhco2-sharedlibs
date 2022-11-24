@@ -1,5 +1,5 @@
 def call(credens,ipName,userName,jarName){
-  sshagent([credens) {
+  sshagent([credens]){
           //copy jar file to tomcat folder
           sh "scp -o StrictHostKeyChecking=no /target/${jarName}.jar ${userName}@${ipName}:/opt/tomcat9/webapps"
           sh "ssh ${userName}@${ipName} /opt/tomcat9/bin/shutdown.sh"
