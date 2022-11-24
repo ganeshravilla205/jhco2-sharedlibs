@@ -1,2 +1,2 @@
 def call(name){
-echo "Hi Ganesh${name} Welcome!!"
+echo "Hi Ganesh${name}, Welcome!!"
